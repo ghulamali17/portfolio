@@ -169,6 +169,8 @@
 .project__card img {
   border-radius: 5px;
   cursor: pointer;
+  height: 250px;
+  width: 420px;
 }
 
 /* footer */
