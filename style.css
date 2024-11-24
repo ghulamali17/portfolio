@@ -71,7 +71,7 @@
 /* about */
 
 .about {
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 .about h4 {
   padding: 2rem;
@@ -87,21 +87,21 @@
   max-width: 455px;
   margin: auto;
 }
-/* banner */
-.banners{
-  background-color: var(--secondary-color-light);
+.banners {
+  background-color: var(--secondary-color);
 }
+
 .banner__card {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem; /* Adjusted padding for smaller screens */
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column; /* Ensure proper alignment */
+  align-items: center;
   background-color: var(--secondary-color-light);
-  border-radius: 5px;
+  border-radius: 8px;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
-  width: 365px;
-  height: 192px;
+  max-width: 320px; /* Reduced width for better scaling */
+  min-height: 200px; /* Ensures uniform height */
 }
 
 .banner__card:hover {
@@ -109,26 +109,47 @@
 }
 
 .banner__card span {
-  padding: 4px 10px;
+  padding: 6px 12px;
   font-size: 1.5rem;
   background-color: var(--secondary-color-dark);
   border-radius: 100%;
   transition: 0.3s;
 }
 
-.banner__card:hover span {
-  color: var(--secondary-color);
-  background-image: var(--gradient);
-}
-
 .banner__card h4 {
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .banner__card p {
   color: var(--text-light);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* projects */
+.projectss {
+  background-color: var(--secondary-color);
+}
+
+
+@media (max-width: 576px) {
+  .banner__card {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .about__image img {
+    max-width: 350px;
+    margin: auto;
+  }
+}
+
+@media (width > 480px) {
+  .banner__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 768px) {
   html,
@@ -145,4 +166,18 @@
   .hmburger {
     display: inline-block !important;
   }
+  .banner__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+/* @media (max-width: 425px) {
+   .banner__card {
+    padding: 1rem 0.5rem;
+    width: 249px;
+    height: 300px; 
+   overflow: hidden;
+}
+
+
+ 
+} */
