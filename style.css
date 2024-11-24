@@ -175,7 +175,10 @@
 footer{
   background-color: var(--secondary-color-dark);
   color: white;
-  padding: 3rem;
+  padding: 100px !important;
+}
+footer li{
+  margin-bottom: 10px;
 }
 footer li a {
   text-decoration: none;
