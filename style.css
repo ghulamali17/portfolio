@@ -68,6 +68,9 @@
 .hero {
   background-color: var(--secondary-color-dark);
 }
+.hero h1{
+  font-size: 3rem;
+}
 /* about */
 
 .about {
