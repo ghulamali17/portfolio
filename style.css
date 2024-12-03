@@ -15,7 +15,7 @@
     var(--primary-color)
   );
 } 
-html {
+html{
   overflow-x: hidden;
   width: 100%;
 }
@@ -103,6 +103,7 @@ html {
 /* about */
 .about {
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 .about h4 {
   padding: 2rem;
@@ -120,6 +121,7 @@ html {
 }
 .banners {
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 
 .banner__card {
