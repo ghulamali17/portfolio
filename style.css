@@ -15,8 +15,8 @@
     var(--primary-color)
   );
 } 
-html,body {
-  overflow-x: hidden !important;
+html {
+  overflow-x: hidden;
   width: 100%;
 }
 
