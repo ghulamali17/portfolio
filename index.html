@@ -46,12 +46,8 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <button class="btnn" onclick="window.open('#contact')">
-              Contact
-            </button>
-          </li>
+          <li><a href="#contact" class="btnn text-black">Contact</a></li>
+         
         </ul>
         <div class="hmburger"><i class="fa-solid fa-bars"></i></div>
       </div>
@@ -268,18 +264,9 @@
     <!-- Contact Us -->
     <section class="contact" id="contact">
       <h2 class="section__header">Get In Touch</h2>
-      <form
-        id="contactForm"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        class="contact__form"
-      >
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact__form"> 
         <div class="input__row">
-          <input
-            type="hidden"
-            name="access_key"
-            value="d9e4292e-dc90-4d68-9679-69f45258d488"
-          />
+          <input type="hidden" name="access_key" value="d9e4292e-dc90-4d68-9679-69f45258d488">
           <input type="text" name="first_name" placeholder="First Name" />
           <input type="text" name="last_name" placeholder="Last Name" />
         </div>
