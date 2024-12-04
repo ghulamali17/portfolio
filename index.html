@@ -47,7 +47,11 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button class="btnn" onclick="window.open('#contact')">Contact</button></li>
+          <li>
+            <button class="btnn" onclick="window.open('#contact')">
+              Contact
+            </button>
+          </li>
         </ul>
         <div class="hmburger"><i class="fa-solid fa-bars"></i></div>
       </div>
@@ -65,9 +69,19 @@
               Hi, I Am Ali. <br />Frontend Developer!
             </h1>
             <p class="mb-4 mt-4" data-aos="fade-up" data-aos-duration="3000">
-              Hi, I’m Ali, a frontend developer dedicated to crafting visually stunning and responsive websites. I specialize in modern web design, delivering seamless user experiences with clean and efficient code..
+              Hi, I’m Ali, a frontend developer dedicated to crafting visually
+              stunning and responsive websites. I specialize in modern web
+              design, delivering seamless user experiences with clean and
+              efficient code..
             </p>
-           <a href="#contact" class="btnn" data-aos="fade-up" data-aos-duration="3000">  Contact Me Now</a>
+            <a
+              href="#contact"
+              class="btnn"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              Contact Me Now</a
+            >
           </div>
           <div class="col-md-6 text-center">
             <img
@@ -110,7 +124,10 @@
               data-aos="fade-up"
               data-aos-anchor-placement="bottom-bottom"
             >
-            Hi, I’m Ali, a frontend developer passionate about creating visually engaging and user-friendly websites. I love turning ideas into functional designs that deliver exceptional digital experiences.
+              Hi, I’m Ali, a frontend developer passionate about creating
+              visually engaging and user-friendly websites. I love turning ideas
+              into functional designs that deliver exceptional digital
+              experiences.
             </p>
             <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
               With a focus on user experience and a commitment to staying
@@ -118,14 +135,14 @@
               web solutions that not only meet but exceed expectations.
             </h4>
             <a
-            class="btnn mt-5"
-            href="./images/Ghulam Ali Cv.pdf"  
-            download="CV" 
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom"
-          >
-            Download CV
-          </a>
+              class="btnn mt-5"
+              href="./images/Ghulam Ali Cv.pdf"
+              download="CV"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
@@ -251,17 +268,25 @@
     <!-- Contact Us -->
     <section class="contact" id="contact">
       <h2 class="section__header">Get In Touch</h2>
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact__form"> 
+      <form
+        id="contactForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact__form"
+      >
         <div class="input__row">
-          <input type="hidden" name="access_key" value="d9e4292e-dc90-4d68-9679-69f45258d488">
+          <input
+            type="hidden"
+            name="access_key"
+            value="d9e4292e-dc90-4d68-9679-69f45258d488"
+          />
           <input type="text" name="first_name" placeholder="First Name" />
           <input type="text" name="last_name" placeholder="Last Name" />
         </div>
         <input type="email" name="email" placeholder="Email" />
         <input type="text" name="description" placeholder="Description" />
-        <button class="btnn">Submit</button>
+        <button type="submit" class="btnn">Submit</button>
       </form>
-      
     </section>
 
     <!-- Footer Section -->
