@@ -116,8 +116,10 @@ html{
   border-radius: 5px;
 }
 .about__image img {
-  max-width: 455px;
-  margin: auto;
+  width: 100%; /* Ensure the image scales to fit the container */
+  max-width: 455px; /* Set a maximum size */
+  margin: auto; /* Center the image horizontally */
+  display: block; /* Prevent inline image alignment issues */
 }
 .banners {
   background-color: var(--secondary-color);
@@ -276,13 +278,14 @@ footer ul {
 }
 
 @media (max-width: 576px) {
-  .banner__card {
-    padding: 1rem;
-    max-width: 100%;
-  }
   .about__image img {
     max-width: 400px;
-    margin: auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .about__image img {
+    max-width: 295px;
   }
 }
 @media (max-width: 768px) {
@@ -350,8 +353,18 @@ footer ul {
     gap: 2rem;
   }
 }
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .about__image img {
     max-width: 295px;
   }
 }
+@media (max-width: 320px) {
+  .about__image img {
+    max-width: 333px;
+  }
+}
+@media (max-width: 412px) {
+  .about__image img {
+    max-width: 333px;
+  }
+} */
