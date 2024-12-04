@@ -116,10 +116,10 @@ html{
   border-radius: 5px;
 }
 .about__image img {
-  width: 100%; /* Ensure the image scales to fit the container */
-  max-width: 455px; /* Set a maximum size */
-  margin: auto; /* Center the image horizontally */
-  display: block; /* Prevent inline image alignment issues */
+  width: 100%; 
+  max-width: 455px; 
+  margin: auto; 
+  display: block; 
 }
 .banners {
   background-color: var(--secondary-color);
