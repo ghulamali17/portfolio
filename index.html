@@ -257,15 +257,17 @@
     <!-- Contact Us -->
     <section class="contact" id="contact">
       <h2 class="section__header">Get In Touch</h2>
-      <form action="/" class="contact__form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact__form"> 
         <div class="input__row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input type="hidden" name="access_key" value="d9e4292e-dc90-4d68-9679-69f45258d488">
+          <input type="text" name="first_name" placeholder="First Name" />
+          <input type="text" name="last_name" placeholder="Last Name" />
         </div>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Description" />
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" name="description" placeholder="Description" />
         <button class="btnn">Submit</button>
       </form>
+      
     </section>
 
     <!-- Footer Section -->
